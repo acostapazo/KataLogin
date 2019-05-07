@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		403D8CF52281BAF5002E678D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8CF42281BAF5002E678D /* AppDelegate.swift */; };
+		403D8CF72281BAF5002E678D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8CF62281BAF5002E678D /* ViewController.swift */; };
+		403D8CFA2281BAF5002E678D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403D8CF82281BAF5002E678D /* Main.storyboard */; };
+		403D8CFC2281BAFA002E678D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403D8CFB2281BAFA002E678D /* Assets.xcassets */; };
+		403D8CFF2281BAFA002E678D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403D8CFD2281BAFA002E678D /* LaunchScreen.storyboard */; };
+		403D8D0A2281BAFA002E678D /* KataLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8D092281BAFA002E678D /* KataLoginTests.swift */; };
+		530918ACFB83B085831B345F /* Pods_KataLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA71DE899A77B1ECCA78754 /* Pods_KataLoginTests.framework */; };
+		A0C2F06F2732BE30573A9384 /* Pods_KataLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE11F6412D3CD057FEE4669C /* Pods_KataLogin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		403D8D062281BAFA002E678D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 403D8CE92281BAF5002E678D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 403D8CF02281BAF5002E678D;
+			remoteInfo = KataLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21E36659BC449E4DE1D16098 /* Pods-KataLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataLoginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KataLoginTests/Pods-KataLoginTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D3521BE93534454E1A49013 /* Pods-KataLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KataLogin/Pods-KataLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		403D8CF12281BAF5002E678D /* KataLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KataLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		403D8CF42281BAF5002E678D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		403D8CF62281BAF5002E678D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		403D8CF92281BAF5002E678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		403D8CFB2281BAFA002E678D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		403D8CFE2281BAFA002E678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		403D8D002281BAFA002E678D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403D8D052281BAFA002E678D /* KataLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KataLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		403D8D092281BAFA002E678D /* KataLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataLoginTests.swift; sourceTree = "<group>"; };
+		403D8D0B2281BAFA002E678D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403D8D142281BB57002E678D /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		403D8D152281BB57002E678D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		403D8D162281BB57002E678D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		40EFBBA71ED9CADF5BFB6E8D /* Pods-KataLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataLoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KataLoginTests/Pods-KataLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EA71DE899A77B1ECCA78754 /* Pods_KataLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F3AE5626A99B1E3D463D96 /* Pods-KataLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-KataLogin/Pods-KataLogin.release.xcconfig"; sourceTree = "<group>"; };
+		DE11F6412D3CD057FEE4669C /* Pods_KataLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		403D8CEE2281BAF5002E678D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C2F06F2732BE30573A9384 /* Pods_KataLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		403D8D022281BAFA002E678D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530918ACFB83B085831B345F /* Pods_KataLoginTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		403D8CE82281BAF5002E678D = {
+			isa = PBXGroup;
+			children = (
+				403D8D162281BB57002E678D /* .gitignore */,
+				403D8D142281BB57002E678D /* .travis.yml */,
+				403D8D152281BB57002E678D /* Podfile */,
+				403D8CF32281BAF5002E678D /* KataLogin */,
+				403D8D082281BAFA002E678D /* KataLoginTests */,
+				403D8CF22281BAF5002E678D /* Products */,
+				57191457B84E0B0F56835D01 /* Pods */,
+				475FDF76D8F6101628FEEE87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		403D8CF22281BAF5002E678D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				403D8CF12281BAF5002E678D /* KataLogin.app */,
+				403D8D052281BAFA002E678D /* KataLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		403D8CF32281BAF5002E678D /* KataLogin */ = {
+			isa = PBXGroup;
+			children = (
+				403D8CF42281BAF5002E678D /* AppDelegate.swift */,
+				403D8CF62281BAF5002E678D /* ViewController.swift */,
+				403D8CF82281BAF5002E678D /* Main.storyboard */,
+				403D8CFB2281BAFA002E678D /* Assets.xcassets */,
+				403D8CFD2281BAFA002E678D /* LaunchScreen.storyboard */,
+				403D8D002281BAFA002E678D /* Info.plist */,
+			);
+			path = KataLogin;
+			sourceTree = "<group>";
+		};
+		403D8D082281BAFA002E678D /* KataLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				403D8D092281BAFA002E678D /* KataLoginTests.swift */,
+				403D8D0B2281BAFA002E678D /* Info.plist */,
+			);
+			path = KataLoginTests;
+			sourceTree = "<group>";
+		};
+		475FDF76D8F6101628FEEE87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE11F6412D3CD057FEE4669C /* Pods_KataLogin.framework */,
+				9EA71DE899A77B1ECCA78754 /* Pods_KataLoginTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57191457B84E0B0F56835D01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D3521BE93534454E1A49013 /* Pods-KataLogin.debug.xcconfig */,
+				B8F3AE5626A99B1E3D463D96 /* Pods-KataLogin.release.xcconfig */,
+				40EFBBA71ED9CADF5BFB6E8D /* Pods-KataLoginTests.debug.xcconfig */,
+				21E36659BC449E4DE1D16098 /* Pods-KataLoginTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		403D8CF02281BAF5002E678D /* KataLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 403D8D0E2281BAFA002E678D /* Build configuration list for PBXNativeTarget "KataLogin" */;
+			buildPhases = (
+				F2E324FAB198E7C393C9AAE3 /* [CP] Check Pods Manifest.lock */,
+				403D8CED2281BAF5002E678D /* Sources */,
+				403D8CEE2281BAF5002E678D /* Frameworks */,
+				403D8CEF2281BAF5002E678D /* Resources */,
+				3D1BFE1EEEC4BD54AE7D3472 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KataLogin;
+			productName = KataLogin;
+			productReference = 403D8CF12281BAF5002E678D /* KataLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		403D8D042281BAFA002E678D /* KataLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 403D8D112281BAFA002E678D /* Build configuration list for PBXNativeTarget "KataLoginTests" */;
+			buildPhases = (
+				95CE59547DD56303968017A3 /* [CP] Check Pods Manifest.lock */,
+				403D8D012281BAFA002E678D /* Sources */,
+				403D8D022281BAFA002E678D /* Frameworks */,
+				403D8D032281BAFA002E678D /* Resources */,
+				97ED4FFE0D8C57BE139E8361 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				403D8D072281BAFA002E678D /* PBXTargetDependency */,
+			);
+			name = KataLoginTests;
+			productName = KataLoginTests;
+			productReference = 403D8D052281BAFA002E678D /* KataLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		403D8CE92281BAF5002E678D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Biometrics Team";
+				TargetAttributes = {
+					403D8CF02281BAF5002E678D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					403D8D042281BAFA002E678D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 403D8CF02281BAF5002E678D;
+					};
+				};
+			};
+			buildConfigurationList = 403D8CEC2281BAF5002E678D /* Build configuration list for PBXProject "KataLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 403D8CE82281BAF5002E678D;
+			productRefGroup = 403D8CF22281BAF5002E678D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				403D8CF02281BAF5002E678D /* KataLogin */,
+				403D8D042281BAFA002E678D /* KataLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		403D8CEF2281BAF5002E678D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403D8CFF2281BAFA002E678D /* LaunchScreen.storyboard in Resources */,
+				403D8CFC2281BAFA002E678D /* Assets.xcassets in Resources */,
+				403D8CFA2281BAF5002E678D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		403D8D032281BAFA002E678D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D1BFE1EEEC4BD54AE7D3472 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KataLogin/Pods-KataLogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KataLogin/Pods-KataLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95CE59547DD56303968017A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KataLoginTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97ED4FFE0D8C57BE139E8361 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KataLoginTests/Pods-KataLoginTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KataLoginTests/Pods-KataLoginTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E324FAB198E7C393C9AAE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KataLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		403D8CED2281BAF5002E678D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403D8CF72281BAF5002E678D /* ViewController.swift in Sources */,
+				403D8CF52281BAF5002E678D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		403D8D012281BAFA002E678D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403D8D0A2281BAFA002E678D /* KataLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		403D8D072281BAFA002E678D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 403D8CF02281BAF5002E678D /* KataLogin */;
+			targetProxy = 403D8D062281BAFA002E678D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		403D8CF82281BAF5002E678D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				403D8CF92281BAF5002E678D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		403D8CFD2281BAFA002E678D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				403D8CFE2281BAFA002E678D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		403D8D0C2281BAFA002E678D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		403D8D0D2281BAFA002E678D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		403D8D0F2281BAFA002E678D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D3521BE93534454E1A49013 /* Pods-KataLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4236DX29UR;
+				INFOPLIST_FILE = KataLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kata.KataLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		403D8D102281BAFA002E678D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F3AE5626A99B1E3D463D96 /* Pods-KataLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4236DX29UR;
+				INFOPLIST_FILE = KataLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kata.KataLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		403D8D122281BAFA002E678D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40EFBBA71ED9CADF5BFB6E8D /* Pods-KataLoginTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4236DX29UR;
+				INFOPLIST_FILE = KataLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kata.KataLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KataLogin.app/KataLogin";
+			};
+			name = Debug;
+		};
+		403D8D132281BAFA002E678D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E36659BC449E4DE1D16098 /* Pods-KataLoginTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4236DX29UR;
+				INFOPLIST_FILE = KataLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kata.KataLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KataLogin.app/KataLogin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		403D8CEC2281BAF5002E678D /* Build configuration list for PBXProject "KataLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				403D8D0C2281BAFA002E678D /* Debug */,
+				403D8D0D2281BAFA002E678D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		403D8D0E2281BAFA002E678D /* Build configuration list for PBXNativeTarget "KataLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				403D8D0F2281BAFA002E678D /* Debug */,
+				403D8D102281BAFA002E678D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		403D8D112281BAFA002E678D /* Build configuration list for PBXNativeTarget "KataLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				403D8D122281BAFA002E678D /* Debug */,
+				403D8D132281BAFA002E678D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 403D8CE92281BAF5002E678D /* Project object */;
+}

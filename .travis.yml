@@ -1,0 +1,6 @@
+language: objective-c
+osx_image: xcode10.1
+
+script:
+    - pod install
+    - set -o pipefail && xcodebuild -workspace KataLogin.xcworkspace -scheme 'KataLogin' -destination 'platform=iOS Simulator,name=iPhone 6s Plus' build test CODE_SIGN_IDENTITY=- | xcpretty -c
