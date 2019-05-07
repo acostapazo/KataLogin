@@ -21,7 +21,7 @@ class KataLogOutTests: XCTestCase {
     
     func test_should_return_true_if_the_second_is_even() {
         
-        let mockTime = MockTime(mockerCurrentSecond: 2000)
+        let mockTime = MockTime(mockerCurrentSecond: Date(timeIntervalSince1970: 4))
         let logOut = LogOut(time: mockTime)
         
         XCTAssertEqual(true, logOut.invoke())
@@ -29,7 +29,7 @@ class KataLogOutTests: XCTestCase {
     
     func test_should_return_false_if_the_second_is_not_even() {
         
-        let mockTime = MockTime(mockerCurrentSecond: 2001)
+        let mockTime = MockTime(mockerCurrentSecond: Date(timeIntervalSince1970: 3))
         let logOut = LogOut(time: mockTime)
         
         XCTAssertEqual(false, logOut.invoke())

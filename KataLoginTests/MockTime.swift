@@ -10,13 +10,13 @@ import Foundation
 @testable import KataLogin
 
 class MockTime: Time {
-    var _mockerCurrentSecond: CLong = 0
+    var _mockerCurrentSecond: Date? = nil
     
-    init(mockerCurrentSecond: CLong) {
+    init(mockerCurrentSecond: Date) {
         _mockerCurrentSecond = mockerCurrentSecond
     }
     
-    override func now() -> CLong{
-        return _mockerCurrentSecond
+    override var now: Date{
+        return _mockerCurrentSecond!
     }
 }

@@ -47,7 +47,7 @@ class KataPresenterTests: XCTestCase {
     override func setUp() {
         let login = LogIn(textValidators: [TextValidator(invalidChars: [";", ".", "."])],
                           validCredentials: Credentials(username: "admin", password: "admin"))
-        let logout = LogOut(time: MockTime(mockerCurrentSecond: 1))
+        let logout = LogOut(time: MockTime(mockerCurrentSecond: Date(timeIntervalSince1970: 1)))
         
         view = MockKataView()
         presenter = KataPresenter(view: view, login: login, logout: logout)
@@ -63,7 +63,6 @@ class KataPresenterTests: XCTestCase {
             presenter.onLogInButtonClick(credentials: validCredentials)
         
             XCTAssertEqual(true, view.showLogOutFormInvoked)
-            XCTAssertEqual(true, view.hideLogInFormInvoked)
     }
     
     func test_should_return_invalid_username_message() {
