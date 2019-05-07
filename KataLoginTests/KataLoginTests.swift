@@ -11,17 +11,37 @@ import XCTest
 
 class KataLoginTests: XCTestCase {
 
+    private var logIn: LogIn!
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        let textValidators: Array<TextValidator> = [TextValidator(invalidChars: [";"])]
+        logIn = LogIn(textValidators: textValidators, validCredentials: Credentials(username: "admin", password: "admin"))
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_should_returns_log_in_success_if_the_credentials_are_valid() {
+        let credentials = Credentials(username: "admin", password: "admin")
+        let result = logIn.invoke(credentials: credentials)
+        
+        XCTAssertEqual(.success, result)
+    }
+    
+    func test_should_returns_log_in_success_if_invalid_username() {
+        let invalidCredentials = Credentials(username: "ad;min", password: "admin")
+        let result = logIn.invoke(credentials: invalidCredentials)
+
+        XCTAssertEqual(.invalidUsername, result)
+    }
+    
+    func test_should_returns_log_in_invalid_credantials() {
+        let invalidCredentials = Credentials(username: "admin", password: "notValidPass")
+        let result = logIn.invoke(credentials: invalidCredentials)
+
+        XCTAssertEqual(.invalidUsernameAndPassowrd, result)
     }
 
     func testPerformanceExample() {

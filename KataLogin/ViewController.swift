@@ -18,9 +18,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
-
     }
     
     @IBAction func logIn(_ sender: Any) {
@@ -39,6 +36,9 @@ class ViewController: UIViewController {
             }
         }
         else {
+            let logOut = LogOut(time: Time())
+            logOut.invoke()
+            
             button.setTitle("Log In",for: .normal)
             username.text = ""
             password.text = ""

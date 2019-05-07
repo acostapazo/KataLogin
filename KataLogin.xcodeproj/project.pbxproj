@@ -13,6 +13,13 @@
 		403D8CFC2281BAFA002E678D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403D8CFB2281BAFA002E678D /* Assets.xcassets */; };
 		403D8CFF2281BAFA002E678D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403D8CFD2281BAFA002E678D /* LaunchScreen.storyboard */; };
 		403D8D0A2281BAFA002E678D /* KataLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8D092281BAFA002E678D /* KataLoginTests.swift */; };
+		403D8D192281C8D0002E678D /* LogOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8D182281C8D0002E678D /* LogOut.swift */; };
+		403D8D1B2281CA13002E678D /* KataLogOutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8D1A2281CA13002E678D /* KataLogOutTest.swift */; };
+		403D8D1D2281CAC8002E678D /* MockTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8D1C2281CAC8002E678D /* MockTime.swift */; };
+		403D8D1F2281CC1B002E678D /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8D1E2281CC1B002E678D /* Time.swift */; };
+		403D8D222281CFDD002E678D /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8D212281CFDD002E678D /* LogIn.swift */; };
+		403D8D242281DA94002E678D /* KataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8D232281DA94002E678D /* KataPresenter.swift */; };
+		403D8D262281DD6B002E678D /* KataPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8D252281DD6B002E678D /* KataPresenterTest.swift */; };
 		530918ACFB83B085831B345F /* Pods_KataLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA71DE899A77B1ECCA78754 /* Pods_KataLoginTests.framework */; };
 		A0C2F06F2732BE30573A9384 /* Pods_KataLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE11F6412D3CD057FEE4669C /* Pods_KataLogin.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +50,13 @@
 		403D8D142281BB57002E678D /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		403D8D152281BB57002E678D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		403D8D162281BB57002E678D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		403D8D182281C8D0002E678D /* LogOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOut.swift; sourceTree = "<group>"; };
+		403D8D1A2281CA13002E678D /* KataLogOutTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataLogOutTest.swift; sourceTree = "<group>"; };
+		403D8D1C2281CAC8002E678D /* MockTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTime.swift; sourceTree = "<group>"; };
+		403D8D1E2281CC1B002E678D /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		403D8D212281CFDD002E678D /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		403D8D232281DA94002E678D /* KataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataPresenter.swift; sourceTree = "<group>"; };
+		403D8D252281DD6B002E678D /* KataPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataPresenterTest.swift; sourceTree = "<group>"; };
 		40EFBBA71ED9CADF5BFB6E8D /* Pods-KataLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataLoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KataLoginTests/Pods-KataLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EA71DE899A77B1ECCA78754 /* Pods_KataLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F3AE5626A99B1E3D463D96 /* Pods-KataLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-KataLogin/Pods-KataLogin.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,12 +109,14 @@
 		403D8CF32281BAF5002E678D /* KataLogin */ = {
 			isa = PBXGroup;
 			children = (
+				403D8D172281C8A4002E678D /* BussinesLogic */,
 				403D8CF42281BAF5002E678D /* AppDelegate.swift */,
 				403D8CF62281BAF5002E678D /* ViewController.swift */,
 				403D8CF82281BAF5002E678D /* Main.storyboard */,
 				403D8CFB2281BAFA002E678D /* Assets.xcassets */,
 				403D8CFD2281BAFA002E678D /* LaunchScreen.storyboard */,
 				403D8D002281BAFA002E678D /* Info.plist */,
+				403D8D232281DA94002E678D /* KataPresenter.swift */,
 			);
 			path = KataLogin;
 			sourceTree = "<group>";
@@ -110,8 +126,21 @@
 			children = (
 				403D8D092281BAFA002E678D /* KataLoginTests.swift */,
 				403D8D0B2281BAFA002E678D /* Info.plist */,
+				403D8D1A2281CA13002E678D /* KataLogOutTest.swift */,
+				403D8D1C2281CAC8002E678D /* MockTime.swift */,
+				403D8D252281DD6B002E678D /* KataPresenterTest.swift */,
 			);
 			path = KataLoginTests;
+			sourceTree = "<group>";
+		};
+		403D8D172281C8A4002E678D /* BussinesLogic */ = {
+			isa = PBXGroup;
+			children = (
+				403D8D182281C8D0002E678D /* LogOut.swift */,
+				403D8D1E2281CC1B002E678D /* Time.swift */,
+				403D8D212281CFDD002E678D /* LogIn.swift */,
+			);
+			path = BussinesLogic;
 			sourceTree = "<group>";
 		};
 		475FDF76D8F6101628FEEE87 /* Frameworks */ = {
@@ -330,6 +359,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403D8D222281CFDD002E678D /* LogIn.swift in Sources */,
+				403D8D1F2281CC1B002E678D /* Time.swift in Sources */,
+				403D8D192281C8D0002E678D /* LogOut.swift in Sources */,
+				403D8D242281DA94002E678D /* KataPresenter.swift in Sources */,
 				403D8CF72281BAF5002E678D /* ViewController.swift in Sources */,
 				403D8CF52281BAF5002E678D /* AppDelegate.swift in Sources */,
 			);
@@ -339,7 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403D8D1D2281CAC8002E678D /* MockTime.swift in Sources */,
+				403D8D1B2281CA13002E678D /* KataLogOutTest.swift in Sources */,
 				403D8D0A2281BAFA002E678D /* KataLoginTests.swift in Sources */,
+				403D8D262281DD6B002E678D /* KataPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
