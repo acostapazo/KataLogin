@@ -11,8 +11,6 @@ import Foundation
 protocol KataView {
     func showLogInForm() -> Void
     func showLogOutForm() -> Void
-    func hideLogInForm() -> Void
-    func hideLogOutForm() -> Void
     func showErrorMessage(message: String) -> Void
 }
 
@@ -35,7 +33,6 @@ class KataPresenter{
         switch(result){
         case .success:
             view.showLogOutForm()
-            view.hideLogInForm()
         case .invalidUsername:
             view.showErrorMessage(message: "Invalid Username")
         case .invalidUsernameAndPassowrd:
@@ -46,12 +43,10 @@ class KataPresenter{
     func onLogOutButtonClick(){
         if (logout.invoke()){
             view.showLogInForm()
-            view.hideLogOutForm()
         }
         else{
-            
+            view.showErrorMessage(message: "Log out error")
         }
-        
     }
     
 }

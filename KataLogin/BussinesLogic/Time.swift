@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Time: NSObject {
+class Time {
     
-    func now() -> CLong{
-        return 28983291
+    var now: Date {
+        return Date()
     }
 }

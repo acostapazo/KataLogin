@@ -17,6 +17,7 @@ class LogOut{
     }
     
     func invoke() -> Bool {
-        return time.now() % 2 == 0
+        let nowInSeconds = Int(time.now.timeIntervalSince1970)
+        return nowInSeconds % 2 == 0
     }
 }
